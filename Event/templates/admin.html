@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 250px;
+        padding: 10px;
+        margin: 10px 0px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: lightblue;
+        cursor: pointer;
+      }
+    </style>
+    <form action="/Event/password/store/" method="POST">
+      {% csrf_token %}
+      <input type="password" name="password" placeholder="********" />
+      <input type="submit" value="create password" />
+    </form>
+    <a href="/Event/guest/store/">Store Guest</a>
+    <a href="/Event/QR/generator/">Generate QR Codes</a>
+  </body>
+</html>

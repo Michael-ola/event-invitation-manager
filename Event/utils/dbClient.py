@@ -24,3 +24,4 @@ client = get_db_client()
 db = client['QREvent']
 usersCollection = db["guests_info"]
 verificationCollection = db["verification_state"]
+passwordCollection = db["password"]
