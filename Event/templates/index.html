@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <button id="start">start verification</button>
+    <button id="stop">stop verification</button>
+  </body>
+  <script>
+    const startBtn = document.querySelector("#start");
+    const stopBtn = document.querySelector("#stop");
+    startBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      fetch("/Event/verification/start/")
+        .then(() => console.log("Verification started"))
+        .catch((e) => console.log(e));
+    });
+    stopBtn.addEventListener("click", (e) => {
+      fetch("/Event/verification/stop/")
+        .then(() => console.log("Verification stopped"))
+        .catch((e) => console.log(e));
+    });
+  </script>
+</html>
