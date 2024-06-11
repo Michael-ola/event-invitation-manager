@@ -1,5 +1,4 @@
 from django.shortcuts import render, HttpResponse, HttpResponseRedirect
-from rest_framework.decorators import api_view
 import qrcode
 import json
 import pandas as pd
