@@ -11,7 +11,8 @@ from bson.objectid import ObjectId
 import bcrypt
 
 path = 'Event/statics/QRs'
-domain = 'http://localhost:8000'
+# domain = 'http://localhost:8000'
+domain = 'michaelCypher.pythonanywhere.com'
 
 
 def admin(request):
