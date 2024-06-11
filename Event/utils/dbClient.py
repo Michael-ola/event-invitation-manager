@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-dbPassword = '0ujI0qLdSqcGwj9g'  # os.getenv('DB_PASSWORD')
+dbPassword = os.getenv('DB_PASSWORD')
 
 
 def get_db_client():

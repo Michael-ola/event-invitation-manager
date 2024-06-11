@@ -12,7 +12,7 @@ import bcrypt
 
 path = 'Event/statics/QRs'
 # domain = 'http://localhost:8000'
-domain = 'michaelCypher.pythonanywhere.com'
+domain = 'https://qrevent-ce6ed9cb8cd2.herokuapp.com'
 
 
 def admin(request):

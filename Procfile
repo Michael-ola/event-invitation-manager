@@ -1,0 +1,1 @@
+web gunicorn QREvent.wsgi:application --log-file -
